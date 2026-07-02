@@ -3,6 +3,8 @@
 // import viteLogo from './assets/vite.svg'
 // import heroImg from './assets/hero.png'
 import './App.css'
+import { projects } from './data/data'
+import ProjectShowcase from './components/ProjectShowcase/ProjectShowcase'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -10,6 +12,7 @@ function App() {
   return (
     <div className='wrapper'>
       <h1>Midsummercat</h1>
+      <ProjectShowcase projects={projects} />
     </div>
   )
 }
