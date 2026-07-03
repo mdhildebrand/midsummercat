@@ -12,6 +12,7 @@ Error generating stack: `+e.message+`
   display: flex;
 `,Yn=Kn.div`
   display: flex;
+  margin: 0 -3rem;
 `,Xn=Kn.div`
   display: flex;
   height: 600px;
@@ -20,6 +21,7 @@ Error generating stack: `+e.message+`
   position: relative;
   -webkit-clip-path: ${e=>e.active?`polygon(30% 0, 100% 0, 100% 20%, 70% 80%, 70% 100%, 0 100%, 0 80%, 30% 20%)`:`polygon(70% 0, 100% 0, 100% 20%, 30% 80%, 30% 100%, 0 100%, 0 80%, 70% 20%)`};
   clip-path: ${e=>e.active?`polygon(30% 0, 100% 0, 100% 20%, 70% 80%, 70% 100%, 0 100%, 0 80%, 30% 20%)`:`polygon(70% 0, 100% 0, 100% 20%, 30% 80%, 30% 100%, 0 100%, 0 80%, 70% 20%)`};
+  margin-left: ${e=>e.active?`4rem`:`0`};
 
   img {
     height: 100%;
@@ -31,6 +33,7 @@ Error generating stack: `+e.message+`
   display: block;
   text-align: left;
   overflow: hidden;
+  margin: ${e=>e.active?`0 1rem`:`0`};
   width: ${e=>e.active?`180px`:`0`};
 `,Qn=({project:e})=>{let[t,n]=(0,_.useState)(!1);return(0,M.jsxs)(Yn,{onClick:()=>n(!t),children:[(0,M.jsx)(Xn,{active:t,children:(0,M.jsx)(`img`,{src:`/images/${e.image}`})}),(0,M.jsxs)(Zn,{active:t,children:[(0,M.jsx)(`h2`,{children:e.title}),(0,M.jsx)(`p`,{children:e.description})]})]})},$n=({projects:e})=>(0,M.jsx)(Jn,{children:e.map((e,t)=>(0,M.jsx)(Qn,{project:e},t))}),er=Kn.div`
   width: 100%;
