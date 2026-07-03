@@ -7,6 +7,7 @@ const ShowcaseWrapper = styled.div`
 
 const ProjectWrapper = styled.div`
   display: flex;
+  margin: 0 -3rem;
 `
 
 const ImageWrapper = styled.div`
@@ -21,6 +22,7 @@ const ImageWrapper = styled.div`
   clip-path: ${(props) => props.active
     ? 'polygon(30% 0, 100% 0, 100% 20%, 70% 80%, 70% 100%, 0 100%, 0 80%, 30% 20%)'
     : 'polygon(70% 0, 100% 0, 100% 20%, 30% 80%, 30% 100%, 0 100%, 0 80%, 70% 20%)'};
+  margin-left: ${(props) => props.active ? '4rem' : '0'};
 
   img {
     height: 100%;
@@ -34,6 +36,7 @@ const TextWrapper = styled.div`
   display: block;
   text-align: left;
   overflow: hidden;
+  margin: ${(props) => props.active ? '0 1rem' : '0'};
   width: ${(props) => props.active ? '180px' : '0'};
 `;
 
